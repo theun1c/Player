@@ -1,0 +1,50 @@
+﻿<Window x:Class="AnimePlayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AnimePlayer"
+        mc:Ignorable="d"
+        Title="AnimePlayer" Height="600" Width="920"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        WindowStartupLocation="CenterScreen">
+
+    <Border Background="#7678ed"
+            CornerRadius="10">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+
+            <Border CornerRadius="10 0 0 10"
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    Grid.RowSpan="2"
+                    Background="#3d348b"/>
+
+            <TextBlock Text="Player"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Foreground="#f7b801"
+                       FontSize="20"/>
+
+            <MediaElement Grid.Column="1" 
+                          Grid.Row="1" 
+                          Name="dasd">
+                     
+            </MediaElement>
+
+
+
+        </Grid>
+    </Border>
+    
+</Window>
