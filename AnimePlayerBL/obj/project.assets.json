@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\belov\\Desktop\\projects\\AnimePlayer\\AnimePlayer\\AnimePlayerUI.csproj",
-      "projectName": "AnimePlayerUI",
-      "projectPath": "C:\\Users\\belov\\Desktop\\projects\\AnimePlayer\\AnimePlayer\\AnimePlayerUI.csproj",
+      "projectUniqueName": "C:\\Users\\belov\\Desktop\\projects\\AnimePlayer\\AnimePlayerBL\\AnimePlayerBL.csproj",
+      "projectName": "AnimePlayerBL",
+      "projectPath": "C:\\Users\\belov\\Desktop\\projects\\AnimePlayer\\AnimePlayerBL\\AnimePlayerBL.csproj",
       "packagesPath": "C:\\Users\\belov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\belov\\Desktop\\projects\\AnimePlayer\\AnimePlayer\\obj\\",
+      "outputPath": "C:\\Users\\belov\\Desktop\\projects\\AnimePlayer\\AnimePlayerBL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
