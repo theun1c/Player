@@ -18,4 +18,12 @@ C:\Users\belov\Desktop\projects\AnimePlayer\AnimePlayer\obj\Debug\net8.0-windows
 C:\Users\belov\Desktop\projects\AnimePlayer\AnimePlayer\obj\Debug\net8.0-windows\AnimePlayer.pdb
 C:\Users\belov\Desktop\projects\AnimePlayer\AnimePlayer\obj\Debug\net8.0-windows\AnimePlayer.genruntimeconfig.cache
 C:\Users\belov\Desktop\projects\AnimePlayer\AnimePlayer\obj\Debug\net8.0-windows\ref\AnimePlayer.dll
+C:\Users\belov\Desktop\projects\AnimePlayer\AnimePlayer\obj\Debug\net8.0-windows\AnimePlayer.sourcelink.json
+C:\Users\belov\Desktop\projects\AnimePlayer\AnimePlayer\obj\Debug\net8.0-windows\Assets\Themes\MenuButtonTheme.baml
+C:\Users\belov\Desktop\projects\AnimePlayer\AnimePlayer\obj\Debug\net8.0-windows\App.baml
+C:\Users\belov\Desktop\projects\AnimePlayer\AnimePlayer\obj\Debug\net8.0-windows\Assets\Themes\MenuTextBoxTheme.baml
+C:\Users\belov\Desktop\projects\AnimePlayer\AnimePlayer\obj\Debug\net8.0-windows\Views\Controls\HomeView.g.cs
 C:\Users\belov\Desktop\projects\AnimePlayer\AnimePlayer\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\belov\Desktop\projects\AnimePlayer\AnimePlayer\obj\Debug\net8.0-windows\Views\Controls\HomeView.baml
+C:\Users\belov\Desktop\projects\AnimePlayer\AnimePlayer\obj\Debug\net8.0-windows\Views\Controls\DiscoveryView.g.cs
+C:\Users\belov\Desktop\projects\AnimePlayer\AnimePlayer\obj\Debug\net8.0-windows\Views\Controls\DiscoveryView.baml

@@ -7,6 +7,26 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Views\Controls\DiscoveryView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Controls\HomeView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Assets\Themes\MenuButtonTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Assets\Themes\MenuTextBoxTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Controls\DiscoveryView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Controls\HomeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\Windows\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>

@@ -9,12 +9,36 @@ namespace AnimePlayer.ViewModels
 {
     internal class MainWindowViewModel : ViewModelBase
     {
-        private string _Title = "ANIMESHKA";
+        public RelayCommand HomeCommand { get; set; }
+        public RelayCommand DiscoveryCommand { get; set; }
 
-        public string Title 
+        public HomeViewModel Home { get; set; }
+        public DiscoveryViewModel Discovery { get; set; }
+
+        private object _currentView;
+
+        public object CurrentView
         {
-            get => _Title;
-            set => Set(ref _Title, value);
+            get { return _currentView; }
+            set { _currentView = value; OnPropertyChanged(); }
+        }
+
+
+        public MainWindowViewModel()
+        {
+            Home = new HomeViewModel();
+            Discovery = new DiscoveryViewModel();
+            CurrentView = Home;
+
+            HomeCommand = new RelayCommand(o =>
+            {
+                CurrentView = Home;
+            });
+
+            DiscoveryCommand = new RelayCommand(o =>
+            {
+                CurrentView = Discovery;
+            });
         }
     }
 }
