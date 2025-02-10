@@ -10,10 +10,10 @@ namespace AnimePlayer.ViewModels
     internal class MainWindowViewModel : ViewModelBase
     {
         public RelayCommand HomeCommand { get; set; }
-        public RelayCommand DiscoveryCommand { get; set; }
+        public RelayCommand PlayerCommand { get; set; }
 
         public HomeViewModel Home { get; set; }
-        public DiscoveryViewModel Discovery { get; set; }
+        public PlayerViewModel Player { get; set; }
 
         private object _currentView;
 
@@ -27,7 +27,7 @@ namespace AnimePlayer.ViewModels
         public MainWindowViewModel()
         {
             Home = new HomeViewModel();
-            Discovery = new DiscoveryViewModel();
+            Player = new PlayerViewModel();
             CurrentView = Home;
 
             HomeCommand = new RelayCommand(o =>
@@ -35,9 +35,9 @@ namespace AnimePlayer.ViewModels
                 CurrentView = Home;
             });
 
-            DiscoveryCommand = new RelayCommand(o =>
+            PlayerCommand = new RelayCommand(o =>
             {
-                CurrentView = Discovery;
+                CurrentView = Player;
             });
         }
     }

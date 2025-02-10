@@ -7,10 +7,10 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Views\Controls\DiscoveryView.xaml.cs">
+    <Compile Update="Views\Controls\HomeView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Controls\HomeView.xaml.cs">
+    <Compile Update="Views\Controls\PlayerView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -21,10 +21,10 @@
     <Page Update="Assets\Themes\MenuTextBoxTheme.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Controls\DiscoveryView.xaml">
+    <Page Update="Views\Controls\HomeView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Controls\HomeView.xaml">
+    <Page Update="Views\Controls\PlayerView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Windows\MainWindow.xaml">

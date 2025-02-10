@@ -5,16 +5,18 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AnimePlayer.Views.Controls"
              mc:Ignorable="d" 
-             d:DesignHeight="460" d:DesignWidth="800">
+             d:DesignHeight="460" d:DesignWidth="800"
+             Background="#121212">
     <StackPanel>
-        <TextBlock Text="Anime Discover"
+        <TextBlock Text="Home"
                    Foreground="White"
                    FontSize="28"
                    HorizontalAlignment="Left"
-                   Margin="0, 0, 0, 20"/>
+                   Margin="80, 20, 0, 20" RenderTransformOrigin="1.376,0.671"/>
 
         <StackPanel Orientation="Horizontal"
-                    Margin="0,0,0, 10">
+                    Margin="0,0,0, 10"
+                    HorizontalAlignment="Center">
             <Border Width="400"
                     Height="200">
                 <Border.Background>
@@ -75,28 +77,28 @@
                        Foreground="White"
                        FontSize="20"
                        HorizontalAlignment="Left"
-                       Margin="20,0,10,10"/>
+                       Margin="80,0,10,10"/>
             
-            <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center">
                 
                 <Border Width="150"
-                        Height="150"
+                        Height="120"
                         Background="#844eff"
                         CornerRadius="10"
                         Margin="0"/>
                 
                 <Border Width="150"
-                        Height="150"
+                        Height="120"
                         Background="#4e99ff"
                         CornerRadius="10"/>
 
                 <Border Width="150"
-                        Height="150"
+                        Height="120"
                         Background="#4eff91"
                         CornerRadius="10"/>
-
                 <Border Width="150"
-                        Height="150"
+                        Height="120"
                         Background="#ecff4e"
                         CornerRadius="10"/>
 

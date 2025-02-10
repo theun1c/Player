@@ -25,5 +25,5 @@ C:\Users\belov\Desktop\projects\AnimePlayer\AnimePlayer\obj\Debug\net8.0-windows
 C:\Users\belov\Desktop\projects\AnimePlayer\AnimePlayer\obj\Debug\net8.0-windows\Views\Controls\HomeView.g.cs
 C:\Users\belov\Desktop\projects\AnimePlayer\AnimePlayer\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\belov\Desktop\projects\AnimePlayer\AnimePlayer\obj\Debug\net8.0-windows\Views\Controls\HomeView.baml
-C:\Users\belov\Desktop\projects\AnimePlayer\AnimePlayer\obj\Debug\net8.0-windows\Views\Controls\DiscoveryView.g.cs
-C:\Users\belov\Desktop\projects\AnimePlayer\AnimePlayer\obj\Debug\net8.0-windows\Views\Controls\DiscoveryView.baml
+C:\Users\belov\Desktop\projects\AnimePlayer\AnimePlayer\obj\Debug\net8.0-windows\Views\Controls\PlayerView.g.cs
+C:\Users\belov\Desktop\projects\AnimePlayer\AnimePlayer\obj\Debug\net8.0-windows\Views\Controls\PlayerView.baml
