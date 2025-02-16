@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "AnimePlayer": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "SUPABASE_URL": "https://xriljfgwboflvygxrqqr.supabase.co",
+        "SUPABASE_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhyaWxqZmd3Ym9mbHZ5Z3hycXFyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzk2NDc5NzQsImV4cCI6MjA1NTIyMzk3NH0.SVJtgfwqQEVNzXJn2zx5NnWEUSiE2Ba-UmG2-TDPVsI"
+      }
+    }
+  }
+}

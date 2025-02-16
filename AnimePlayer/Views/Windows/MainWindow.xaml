@@ -6,13 +6,14 @@
         xmlns:vm="clr-namespace:AnimePlayer.ViewModels"
         xmlns:local="clr-namespace:AnimePlayer"
         mc:Ignorable="d"
-        Height="600" 
-        Width="920"
+        Height="720" 
+        Width="1280"
         ResizeMode="NoResize"
         WindowStyle="None"
         Background="Transparent"
         AllowsTransparency="True"
-        FontFamily="/Assets/Fonts/#Poppins">
+        FontFamily="/Assets/Fonts/#Poppins"
+        WindowStartupLocation="CenterScreen">
 
     <Window.DataContext>
         <vm:MainWindowViewModel/>
@@ -51,12 +52,6 @@
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding PlayerCommand}"/>
-
-                <RadioButton Content="Favourites"
-                             Height="50"
-                             Foreground="White"
-                             FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"/>
 
             </StackPanel>
 

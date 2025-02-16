@@ -5,60 +5,86 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AnimePlayer.Views.Controls"
              mc:Ignorable="d" 
-             d:DesignHeight="450" 
-             d:DesignWidth="800"
+             d:DesignHeight="625" 
+             d:DesignWidth="1060"
              Background="#121212">
-    <StackPanel>
+    <Grid>
         <TextBlock Text="Player"
                 Foreground="White"
                 FontSize="28"
                 HorizontalAlignment="Left"
                 Margin="80, 20, 0, 20" RenderTransformOrigin="1.376,0.671"/>
 
-        <StackPanel Orientation="Horizontal"
-                 Margin="0,0,0, 10"
-                 HorizontalAlignment="Center">
+        <Grid>
+            <!--Разметка контроллера с плеером-->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="625"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="368"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
 
-            <Border Width="400"
-                 Height="200">
-
-
-                <Border.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#5bc3ff" Offset="0.0"/>
-                        <GradientStop Color="#3aa0ff" Offset="1"/>
-                    </LinearGradientBrush>
-                </Border.Background>
-
-
-
-                <Border.Clip>
-                    <RectangleGeometry RadiusX="10" 
-                                    RadiusY="10"
-                                    Rect="0,0,400,200"/>
-                </Border.Clip>
-
-                <!--сетка внутри плеера-->
+            <Border Grid.Column="1" 
+                    Grid.Row="1" 
+                    Background="Black"
+                    BorderBrush="AliceBlue"
+                    BorderThickness="1">
                 <Grid>
-                    <MediaElement x:Name="mediaPlayer"
-                                  Source="C:\Users\belov\Desktop\projects\AnimePlayer\AnimePlayer\Assets\VideoSourse\Bocchi the Rock!\Bocchi the Rock! - 1.mkv"
-                                  LoadedBehavior="Manual"
-                                  UnloadedBehavior="Stop"/>
 
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10">
-                        <Button Content="Play" Click="PlayButton_Click" Margin="5"/>
-                        <Button Content="Pause" Click="PauseButton_Click" Margin="5"/>
-                        <TextBox x:Name="episodeBox" Text="1"
-                                 Height="30"
-                                 Width="30"
-                                 HorizontalContentAlignment="Center"
-                                 VerticalContentAlignment="Center"/>
-                    </StackPanel>
+                    <!--Внутренняя разметка плеера-->
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="45*"></RowDefinition>
+                        <RowDefinition Height="275*"></RowDefinition>
+                        <RowDefinition Height="45*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+
+                    <!--кнопка (треугольник) -PLAY -->
+                    <Polygon Grid.Row="1"
+                             Grid.Column="1"
+                             Fill="White" 
+                             Points="0, 0, 50, 25, 0, 50"
+                             HorizontalAlignment="Center"
+                             VerticalAlignment="Center" 
+                             >
+                        <!--<Polygon.RenderTransform>
+                            <ScaleTransform ScaleX="0.5" ScaleY="0.5"/>
+                        </Polygon.RenderTransform>-->
+                        <Polygon.Effect>
+                            <BlurEffect Radius="2"/>
+                        </Polygon.Effect>
+                    </Polygon>
+
+                    <Slider Value="0" 
+                            Minimum="0"
+                            Maximum="100" 
+                            SelectionStart="0" 
+                            IsSelectionRangeEnabled="True" 
+                            Grid.Row="2"
+                            Grid.Column="2" Margin="37,15,115,10"
+                            />
+
+                    
+                    <ProgressBar Grid.Row="1"
+                                 Grid.ColumnSpan="3"
+                                 Height="10"
+                                 Width="600"
+                                 VerticalAlignment="Bottom"
+                                 />
                 </Grid>
-                
             </Border>
-             
-        </StackPanel>
 
-    </StackPanel>
+
+        </Grid>
+
+    </Grid>
 </UserControl>

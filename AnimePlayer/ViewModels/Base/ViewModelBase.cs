@@ -25,6 +25,5 @@ namespace AnimePlayer.ViewModels.Base
             OnPropertyChanged(PropertyName);
             return true;
         }
-
     }
 }

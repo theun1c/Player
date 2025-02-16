@@ -5,6 +5,8 @@ VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimePlayer", "AnimePlayer\AnimePlayer.csproj", "{9B08CFB3-5006-48F7-9B75-11E32C07750A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForTest", "ForTest\ForTest.csproj", "{111C1D69-0DC8-43E0-BEB9-067FA8B68FB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9B08CFB3-5006-48F7-9B75-11E32C07750A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B08CFB3-5006-48F7-9B75-11E32C07750A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B08CFB3-5006-48F7-9B75-11E32C07750A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{111C1D69-0DC8-43E0-BEB9-067FA8B68FB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{111C1D69-0DC8-43E0-BEB9-067FA8B68FB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{111C1D69-0DC8-43E0-BEB9-067FA8B68FB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{111C1D69-0DC8-43E0-BEB9-067FA8B68FB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

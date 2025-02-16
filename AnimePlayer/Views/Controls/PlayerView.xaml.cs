@@ -24,16 +24,16 @@ namespace AnimePlayer.Views.Controls
         {
             InitializeComponent();
         }
-        private void PlayButton_Click(object sender, RoutedEventArgs e)
-        {
-            string epStr = $"C:\\Users\\belov\\Desktop\\VideoSourse\\Bocchi the Rock!\\Bocchi the Rock! - {episodeBox.Text.Replace(" ", "")}.mkv";
-            mediaPlayer.Source = new Uri(epStr, UriKind.Absolute);
-            mediaPlayer.Play();
-        }
+        //private void PlayButton_Click(object sender, RoutedEventArgs e)
+        //{
+        //    string epStr = $"C:\\Users\\belov\\Desktop\\VideoSourse\\Bocchi the Rock!\\Bocchi the Rock! - {episodeBox.Text.Replace(" ", "")}.mkv";
+        //    mediaPlayer.Source = new Uri(epStr, UriKind.Absolute);
+        //    mediaPlayer.Play();
+        //}
 
-        private void PauseButton_Click(object sender, RoutedEventArgs e)
-        {
-            mediaPlayer.Pause();
-        }
+        //private void PauseButton_Click(object sender, RoutedEventArgs e)
+        //{
+        //    mediaPlayer.Pause();
+        //}
     }
 }
