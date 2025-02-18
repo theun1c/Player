@@ -1,4 +1,4 @@
-**![Frontend dev branch](https://avatars.mds.yandex.net/i?id=79cf9af02de87dc0abb057f979d023d9_l-5310919-images-thumbs&n=13)
+![Frontend dev branch](https://avatars.mds.yandex.net/i?id=79cf9af02de87dc0abb057f979d023d9_l-5310919-images-thumbs&n=13)
 
 <div id="toc">
   <ul align="center" style="list-style: none">
