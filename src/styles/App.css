@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    background-color: lightblue;
+}
+
+.App {
+    width: 100%;
+    max-width: 1200px;    
+    margin: 0 auto;
+    padding: 20px;
+    background-color: wheat;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* .post {
+    display: flex;
+    padding: 15px;
+    border: 2px solid teal;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+} */
