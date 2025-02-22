@@ -1,84 +1,156 @@
 import { use, useRef, useState } from "react";
-import PostItem from "./components/postItem";
-import "./styles/App.css";
-import PostList from "./components/PostList";
-import MyButton from "./components/UI/Button/MyButton";
-import MyInput from "./components/UI/Input/MyInput";
-import Card from "./components/Card";
-import CardList from "./components/CardList";
+import "./index.css";
+import CardsList from "./components/UI/CardsList/CardsList";
+import Header from "./components/UI/Header/Header";
+import Footer from "./components/UI/Footer/Footer";
 
-
-function App() {
-    // const [posts, setPosts] = useState([
-    //     {
-    //         id: 1,
-    //         title: "First title",
-    //         description: "TextTextTextTextTextText",
-    //     },
-    //     {
-    //         id: 2,
-    //         title: "Second title",
-    //         description: "TextTextTextTextTextText",
-    //     },
-    //     {
-    //         id: 3,
-    //         title: "Third title",
-    //         description: "TextTextTextTextTextText",
-    //     },
-    // ]);
-
-    // const [post, setPost] = useState({title: '', description: ''});
-
-    // const addNewPost = (e) => {
-    //     e.preventDefault()
-
-    //     setPosts([...posts, {...post, id: Date.now()}])
-    //     setPost({title: '', description: ''})
-    // }
-
-    const [items, setItems] = useState([
+const App = () => {
+    const [cardItems, setCardItems] = useState([
         {
-            id: Date.now(),
-            image: "https://i.pinimg.com/736x/cb/02/b8/cb02b8c760b323dc8a1989636fecd2b9.jpg",
-            name: "anime 1",
-            description: "descr 1"
+            id: 1,
+            cardImgUrl:
+                "https://i.pinimg.com/736x/08/b4/d5/08b4d55c60785b9164d5b879fefd3a9f.jpg",
+            title: "title 1",
+            subtitle: "subtitle 1",
+            description: "desc text",
         },
         {
-            id: Date.now(),
-            image: "https://i.pinimg.com/736x/cb/02/b8/cb02b8c760b323dc8a1989636fecd2b9.jpg",
-            name: "anime 2",
-            description: "descr 2"
+            id: 2,
+            cardImgUrl:
+                "https://i.pinimg.com/736x/08/b4/d5/08b4d55c60785b9164d5b879fefd3a9f.jpg",
+            title: "title 2",
+            subtitle: "subtitle 2",
+            description: "desc text",
         },
         {
-            id: Date.now(),
-            image: "https://i.pinimg.com/736x/cb/02/b8/cb02b8c760b323dc8a1989636fecd2b9.jpg",
-            name: "anime 3",
-            description: "descr 3"
+            id: 2,
+            cardImgUrl:
+                "https://i.pinimg.com/736x/08/b4/d5/08b4d55c60785b9164d5b879fefd3a9f.jpg",
+            title: "title 2",
+            subtitle: "subtitle 2",
+            description: "desc text",
         },
-    ])
+        {
+            id: 2,
+            cardImgUrl:
+                "https://i.pinimg.com/736x/08/b4/d5/08b4d55c60785b9164d5b879fefd3a9f.jpg",
+            title: "title 2",
+            subtitle: "subtitle 2",
+            description: "desc text",
+        },
+        {
+            id: 2,
+            cardImgUrl:
+                "https://i.pinimg.com/736x/08/b4/d5/08b4d55c60785b9164d5b879fefd3a9f.jpg",
+            title: "title 2",
+            subtitle: "subtitle 2",
+            description: "desc text",
+        },
+        {
+            id: 2,
+            cardImgUrl:
+                "https://i.pinimg.com/736x/08/b4/d5/08b4d55c60785b9164d5b879fefd3a9f.jpg",
+            title: "title 2",
+            subtitle: "subtitle 2",
+            description: "desc text",
+        },
+        {
+            id: 2,
+            cardImgUrl:
+                "https://i.pinimg.com/736x/08/b4/d5/08b4d55c60785b9164d5b879fefd3a9f.jpg",
+            title: "title 2",
+            subtitle: "subtitle 2",
+            description: "desc text",
+        },
+        {
+            id: 2,
+            cardImgUrl:
+                "https://i.pinimg.com/736x/08/b4/d5/08b4d55c60785b9164d5b879fefd3a9f.jpg",
+            title: "title 2",
+            subtitle: "subtitle 2",
+            description: "desc text",
+        },
+        {
+            id: 2,
+            cardImgUrl:
+                "https://i.pinimg.com/736x/08/b4/d5/08b4d55c60785b9164d5b879fefd3a9f.jpg",
+            title: "title 2",
+            subtitle: "subtitle 2",
+            description: "desc text",
+        },
+        {
+            id: 2,
+            cardImgUrl:
+                "https://i.pinimg.com/736x/08/b4/d5/08b4d55c60785b9164d5b879fefd3a9f.jpg",
+            title: "title 2",
+            subtitle: "subtitle 2",
+            description: "desc text",
+        },
+        {
+            id: 2,
+            cardImgUrl:
+                "https://i.pinimg.com/736x/08/b4/d5/08b4d55c60785b9164d5b879fefd3a9f.jpg",
+            title: "title 2",
+            subtitle: "subtitle 2",
+            description: "desc text",
+        },
+        {
+            id: 2,
+            cardImgUrl:
+                "https://i.pinimg.com/736x/08/b4/d5/08b4d55c60785b9164d5b879fefd3a9f.jpg",
+            title: "title 2",
+            subtitle: "subtitle 2",
+            description: "desc text",
+        },
+        {
+            id: 2,
+            cardImgUrl:
+                "https://i.pinimg.com/736x/08/b4/d5/08b4d55c60785b9164d5b879fefd3a9f.jpg",
+            title: "title 2",
+            subtitle: "subtitle 2",
+            description: "desc text",
+        },
+        {
+            id: 2,
+            cardImgUrl:
+                "https://i.pinimg.com/736x/08/b4/d5/08b4d55c60785b9164d5b879fefd3a9f.jpg",
+            title: "title 2",
+            subtitle: "subtitle 2",
+            description: "desc text",
+        },
+        {
+            id: 2,
+            cardImgUrl:
+                "https://i.pinimg.com/736x/08/b4/d5/08b4d55c60785b9164d5b879fefd3a9f.jpg",
+            title: "title 2",
+            subtitle: "subtitle 2",
+            description: "desc text",
+        },
+        {
+            id: 2,
+            cardImgUrl:
+                "https://i.pinimg.com/736x/08/b4/d5/08b4d55c60785b9164d5b879fefd3a9f.jpg",
+            title: "title 2",
+            subtitle: "subtitle 2",
+            description: "desc text",
+        },
+
+    ]);
 
     return (
-        <div className="App">
-            
-            <CardList items = {items}/>
-            {/* <form>
-                <MyInput 
-                    value={post.title} 
-                    onChange={e => setPost({...post, title: e.target.value})}
-                    type="text" 
-                    placeholder="Название поста"
-                />
-                <MyInput 
-                    value={post.description}
-                    onChange={e => setPost({...post, description: e.target.value})}
-                    type="text" 
-                    placeholder="Описание поста"
-                />
-                <MyButton onClick={addNewPost}>Создать пост</MyButton>
-            </form>
-            <PostList posts={posts} title="Список постов 1" /> */}
+        <div className="min-h-screen flex flex-col bg-gray-900">
+            <Header />
+            <main className="container mx-auto p-4 flex-1">
+                <h2 className="text-3xl font-bold text-white mb-6">
+                    Популярные аниме
+                </h2>
+                <div className="flex flex-row overflow-x-auto space-x-4 pb-4">
+                    <CardsList cardItems={cardItems}></CardsList>
+                </div>
+            </main>
+            <Footer />
         </div>
     );
-}
+};
 
 export default App;
