@@ -11,3 +11,4 @@
 </div>
 
  **<h3 align="left">I decided to implement the idea of an anime player in the form of a website.</h3>**
+**<h3>REACT + TAILWINDCSS<h3>**
