@@ -1,21 +1,26 @@
 import { use, useRef, useState } from "react";
 import "./index.css";
-import BlueBotton from "./UI/button/BlueButton";
-import Header from "./components/Header";
-import HeroSection from "./components/HeroSection";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NaviBar from "./components/NaviBar";
+import Home from "./pages/Home";
+import Profile from "./pages/Profile";
+
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    Link
+} from "react-router-dom"
 
 const App = () => {
     return (
-        <div className="bg-black">
-            {/* container */}
-            <div className="max-w-[1400px] mx-auto px-4">
-                <Header></Header>
-            </div>
-            
-            {/* hero section */}
-            <HeroSection></HeroSection>
-
-        </div>
+        <Router>
+            <NaviBar></NaviBar>
+            <Routes>
+                <Route path="/" element={<Home/>}></Route>
+                <Route path="/profile" element={<Profile/>}></Route>
+            </Routes>
+        </Router>
     );
 };
 
