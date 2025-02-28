@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "AnimePlayerBack.Controllers.SliderController",
+    "Method": "GetSliderItem",
+    "RelativePath": "api/Slider",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

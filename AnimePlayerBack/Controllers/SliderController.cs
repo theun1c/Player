@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace AnimePlayerBack.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class SliderController : ControllerBase
     {
         private readonly PlayerDbContext _dbContext;
@@ -15,15 +15,22 @@ namespace AnimePlayerBack.Controllers
             _dbContext = dbContext;   
         }
 
-        [HttpPost]
-        public async Task<IActionResult> CreateSliderItem([FromBody] CreateSliderItemRequest request, CancellationToken ct) 
-        {
-            var sliderItem = new SliderItem(request.Title, request.Description);
-            
-            await _dbContext.SliderItems.AddAsync(sliderItem, ct);
-            await _dbContext.SaveChangesAsync(ct);
+        //[HttpPost]
+        //public async Task<IActionResult> CreateSliderItem([FromBody] CreateSliderItemRequest request, CancellationToken ct) 
+        //{
+        //    var sliderItem = new SliderItem(request.Title, request.Description);
 
-            return Ok();
+        //    await _dbContext.SliderItems.AddAsync(sliderItem, ct);
+        //    await _dbContext.SaveChangesAsync(ct);
+
+        //    return Ok();
+        //}
+
+        [HttpGet]
+        public async Task<IActionResult> GetSliderItem()
+        {
+            return Ok("test swagger");
         }
+        
     }
 }

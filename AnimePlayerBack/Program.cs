@@ -1,4 +1,5 @@
 using AnimePlayerBack.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace AnimePlayerBack
 {
@@ -8,9 +9,25 @@ namespace AnimePlayerBack
         {
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddControllers();
-            builder.Services.AddScoped<PlayerDbContext>();
+
+            // added swagger services
+            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddSwaggerGen();
+
+            // auto-get connection string
+            builder.Services.AddDbContext<PlayerDbContext>(options =>
+                options.UseNpgsql(builder.Configuration.GetConnectionString("Database"))
+            );
+
             var app = builder.Build();
 
+            if (app.Environment.IsDevelopment())
+            {
+                app.UseSwagger();
+                app.UseSwaggerUI();
+            }
+
+            app.UseHttpsRedirection();
             app.MapControllers();
             app.Run();
         }
