@@ -1,4 +1,4 @@
-![Backend dev branch](https://rare-gallery.com/uploads/posts/4506810-hibike-euphonium-nakagawa-natsuki-window-anime-girls.png)
+![Backend dev branch](https://avatars.mds.yandex.net/i?id=26fa19d9cea8b1ae73a9df628cb028c4_l-5192432-images-thumbs&n=13)
 
 <div id="toc">
   <ul align="center" style="list-style: none">
