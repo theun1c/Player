@@ -10,6 +10,16 @@ namespace AnimePlayerBack
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddControllers();
 
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpecificOrigin", policy =>
+                {
+                    policy.WithOrigins("http://localhost:5173") // Разрешить запросы от любого источника
+                           .AllowAnyMethod() // Разрешить все HTTP-методы (GET, POST, PUT и т.д.)
+                          .AllowAnyHeader(); // Разрешить все заголовки
+                });
+            });
+
             // added swagger services
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -26,7 +36,7 @@ namespace AnimePlayerBack
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
+            app.UseCors("AllowSpecificOrigin");
             app.UseHttpsRedirection();
             app.MapControllers();
             app.Run();

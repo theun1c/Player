@@ -6,7 +6,7 @@ namespace AnimePlayerBack.Data
     {
         public PlayerDbContext(DbContextOptions<PlayerDbContext> options) : base(options)
         {
-
+            
         }
 
         public DbSet<SliderItem> SliderItems => Set<SliderItem>();

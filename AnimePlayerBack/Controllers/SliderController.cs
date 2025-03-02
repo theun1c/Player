@@ -2,6 +2,7 @@
 using AnimePlayerBack.Data;
 using AnimePlayerBack.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace AnimePlayerBack.Controllers
 {
@@ -29,8 +30,9 @@ namespace AnimePlayerBack.Controllers
         [HttpGet]
         public async Task<IActionResult> GetSliderItem()
         {
-            return Ok("test swagger");
+            var sliderItems = await _dbContext.SliderItems.ToListAsync();
+            return Ok(sliderItems);
         }
-        
+
     }
 }

@@ -132,3 +132,4 @@ C:\Users\belov\Desktop\projects\AnimePlayerBack\AnimePlayerBack\bin\Debug\net9.0
 C:\Users\belov\Desktop\projects\AnimePlayerBack\AnimePlayerBack\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\belov\Desktop\projects\AnimePlayerBack\AnimePlayerBack\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\belov\Desktop\projects\AnimePlayerBack\AnimePlayerBack\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\belov\Desktop\projects\AnimePlayerBack\AnimePlayerBack\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
