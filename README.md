@@ -16,3 +16,6 @@
 
 **<h3>TODO</h3>**
 - ! переделать все под нативную верстку (иногда юзать) бутстрап 
+
+**<h3>То что я хотел бы видеть +-</h3>**
+![](https://attachments-cdn.com/okocrm/text/bugIxTyILoiFVtioq3ic.png)
