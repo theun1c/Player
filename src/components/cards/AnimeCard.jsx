@@ -8,12 +8,12 @@ const AnimeCard = () => {
             <Card data-bs-theme="dark" className={style.card}>
                 <Card.Img
                     variant="top"
-                    src="https://steamuserimages-a.akamaihd.net/ugc/52453354080448818/543783B601D5A853E3F50907B9722A314DFD92B6/?imw=512&amp;imh=320&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true"
+                    src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_669e4836d650e65cc3b79a07_669f5775ef9cc462933c2513/scale_1200"
                 />
                 <Card.Body>
-                    <Card.Title>Название аниме</Card.Title>
+                    <Card.Title>Название</Card.Title>
                     <Card.Text>
-                        Краткое описание аниме
+                        Краткое описание
                     </Card.Text>
                 </Card.Body>
 
