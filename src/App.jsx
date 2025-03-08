@@ -1,26 +1,18 @@
-import { use, useRef, useState } from "react";
-import "./index.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import NaviBar from "./components/NaviBar";
-import Home from "./pages/Home";
-import Profile from "./pages/Profile";
-
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-    Link
-} from "react-router-dom"
+import React from "react";
+import NavigationBar from "./components/navbar/NavigationBar";
+import "bootstrap/dist/css/bootstrap.min.css";
+import AnimeCardList from "./components/cards/AnimeCardList";
+import { Container } from "react-bootstrap";
+import './index.css';
 
 const App = () => {
     return (
-        <Router>
-            <NaviBar></NaviBar>
-            <Routes>
-                <Route path="/" element={<Home/>}></Route>
-                <Route path="/profile" element={<Profile/>}></Route>
-            </Routes>
-        </Router>
+        <div>
+            <NavigationBar />
+            <Container className="mt-4">
+                <AnimeCardList />
+            </Container>
+        </div>
     );
 };
 

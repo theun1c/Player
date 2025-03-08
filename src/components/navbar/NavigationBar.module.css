@@ -1,0 +1,15 @@
+.navbar {
+    /* background: #141414; */
+    border-bottom: 2px solid #313131;
+    background: black;
+    height: 80px ;
+}
+
+.navbar__search {
+    background-color: black !important; /* Темный фон */
+    transition: text-shadow 0.4s !important; /* Плавный переход */
+}
+
+.navbar__search:focus {
+    box-shadow: 0 0 3px white !important;
+}
